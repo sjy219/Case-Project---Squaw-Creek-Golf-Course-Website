@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Squaw Creek Golf Course</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
+	<style>
+		#slides {
+            position: relative;
+            height: 550px;
+			margin: 0px;
+			right: auto;
+            list-style-type: none;
+			
+			overflow: hidden;
+			width: 100%;
+			
+        }
+
+        .slide {
+            position: absolute;
+            right: 0px;
+            top: -20px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+
+            -webkit-transition: opacity 2s;
+            -moz-transition: opacity 2s;
+            -o-transition: opacity 2s;
+            transition: opacity 2s;
+         }
+
+        .showing {
+            opacity: 1;
+            z-index: 2;
+         }
+	</style>
+</head>
+
+<body>
+	
+	
+	<header>
+		<a href="index.html"> 
+			<img id="logo" src="images/Squaw_rescale.png">
+		</a>
+		<ul class="main_nav">
+			<li class="nav"><a href="index.html" style="text-decoration: none">HOME</a></li>
+			<li class="nav"><a href="about.html" style="text-decoration: none">ABOUT US</a></li>
+			<li class="nav"><a href="calendar.html" style="text-decoration: none">CALENDAR</a></li>
+			<li class="nav"><a href="store.aspx" style="text-decoration: none">STORE</a></li>
+			<li class="nav"><a href="membership.aspx" style="text-decoration: none">MEMBERSHIPS</a></li>
+			<li class="nav"><a href="MonthlyLetter.aspx" style="text-decoration: none">NEWSLETTER</a></li>
+		</ul>
+	</header>
+	
+	
+	
+	<div class="frame">
+	<!-- List of Images -->
+    <ul id="slides">
+        <li class="slide showing"><img alt="image 1" src="images/slideshow/image1.jpg" /></li>
+        <li class="slide"><img alt="image 2" src="images/slideshow/image2.jpg" /></li>
+        <li class="slide"><img alt="image 3" src="images/slideshow/image3.jpg" /></li>
+        <li class="slide"><img alt="image 4" src="images/slideshow/image4.jpg" /></li>
+        <li class="slide"><img alt="image 5" src="images/slideshow/image5.jpg" /></li>
+    </ul>
+    <!-- JavaScript to Run Slide Show -->
+    <script>
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,3000);
+
+		function nextSlide() {
+			slides[currentSlide].className = 'slide';
+			currentSlide = (currentSlide+1)%slides.length;
+			slides[currentSlide].className = 'slide showing';
+		}
+    </script>
+	</div>
+
+	
+	
+</body>
+	
+</html>
+<footer> 
+		<p class="copyright"><strong>@ 2017 Squaw Creek Golf Course </strong></p>
+		<p class="footer_text"><strong>1605 Ranch House Rd. | Willow Park, TX 76087 | Tel. (817) 441-8185 | Designed by Team B | <a href="mailto:SquawCreekGolfCourse@gmail.com">Email Us</a></strong></p>
+		<p></p>
+		<img id="footer_logo" src="images/footer-logo.png">
+	</footer>

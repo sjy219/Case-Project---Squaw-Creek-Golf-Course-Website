@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+
+/*---------- IMAGE CSS ----------*/
+#logo{
+	position: relative;
+	width: 12%;
+	margin-left: 44%;
+}
+
+#footer_logo{
+	width: 20%;
+}
+/*---------- END IMGAGE CSS ----------*/
+
+
+/*---------- TEXT FORMAT CSS ----------*/
+.copyright{
+	color: #2e99d3;
+	font-family: 'Merriweather', serif;
+	font-size: 13px;
+}
+.footer_text{
+	color: #2e99d3;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+.content_title_text{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+.textbox
+{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 13px;
+	text-align: center;
+}
+.content_header_text{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.content_text{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 13px;
+	text-align: left;
+	
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.membership_text{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+}
+.membership_title_text{
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	text-align: center;
+}
+/*---------- END TEXT FORMAT CSS ----------*/
+
+
+
+.main_nav{
+	border: 2px solid #2D2C2C;
+	
+	list-style-type: none;
+	margin: 10px;
+	padding: 4px;
+	
+	text-align: center;
+	
+	margin-left: 500px;
+	margin-right: 500px;
+	
+	background-color: black;
+	color: #2e99d3;
+	font-family: 'Merriweather', serif;
+	
+	box-shadow: 5px 5px 2px black;
+}
+
+li.nav{
+	display: inline;
+	padding: 2%;
+	font-size: 17px;
+}
+
+li a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+a{
+	color: #2e99d3;
+}
+
+
+/*---------- DIV CSS ----------*/
+div.frame{
+	
+	margin-left: 500px;
+	margin-right: 500px;
+	margin-bottom: 0px;
+	
+	overflow: hidden;
+	
+}
+div.article_frame{
+	background-image: url(images/background_alt.png);
+	
+	padding-top: 1px;
+	padding-bottom: 1px;
+	
+	margin-left: 500px;
+	margin-right: 500px;
+	margin-bottom: 1px;
+	
+}
+div.article_frame_extended{
+	background-image: url(images/homeResize.jpg);
+	
+	padding-top: 1px;
+	padding-bottom: 1px;
+	
+	margin-left: 200px;
+	margin-right: 200px;
+}
+div.calendar_frame{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	
+	margin-left: 30%;
+}
+div.calendar_event_frame{
+	border: 1px solid black;
+	background-image: url(images/background_alt.png);
+	
+	padding-bottom: 5px;
+	
+	margin-top: -1px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+div.membership_input_frame{
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+/*---------- END DIV CSS ----------*/
+
+
+
+body{
+	background-image: url(images/background_linear.png);
+}
+
+footer{
+	border: 2px solid #2D2C2C;
+	
+	background-color: black;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: 500px;
+	margin-right: 500px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	
+}
